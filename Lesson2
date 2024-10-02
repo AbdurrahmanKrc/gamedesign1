@@ -1,0 +1,131 @@
+"""
+import sys
+prin(sys.version)
+check the python version
+run selection
+first select the code and then shift + alt + e
+"""
+import math
+
+# bringing back the command is ctrl + z
+
+# 5.5 is float
+# 3 is intager
+type(True)
+print("hello aı") # you can comment after the code
+
+def multiplication(x,y):
+    """
+    this is a function comment
+    :param x:
+    :param y:
+    :return:
+    """
+    print(x * y)
+
+multiplication(24,25)
+
+def factorial(n):
+    """
+    :param n:
+    :return:
+    """
+    print(math.factorial(n))
+factorial(6)
+
+def divide(a,b):
+    """
+    :param a:
+    :param b:
+    :return:
+    """
+    print(a/b)
+divide(9,3)
+
+def add(h,l):
+    """
+    
+    :param h: 
+    :param l: 
+    :return: 
+    """
+    print(h+l)
+
+print(add(23,23))
+
+#Python variables
+##Variables are used to store data values
+
+#A variable is created the first time you assign a value to a variable
+
+var1 = 3
+var2 = 5
+print(var1)
+print(var2)
+
+print(type(var1))
+
+# ' and " is same thing
+
+# case-sensitive
+# variable names are case-sensitive
+
+x = "apo"
+X = 9
+
+myVar = "abdurrahman"
+
+# give a short name or a more descriptive name (age,name,total etc.)
+# variable cant start with a number
+
+# one value to multiple variables
+
+x = y = z = "cat"
+print(x)
+print(y)
+print(z)
+
+# unpack collection
+
+fruits = ["apple","banana","orange"]
+x,y,z = fruits
+print(x,y,z)
+
+#print function often used to output variables
+
+x2 = "Python "
+y2 = "is "
+z2 = "great "
+print (x2 + y2 + z2)
+
+x3 = str(5)
+y3 = "john wick "
+print(y3 + x3)
+
+#global variable
+x4 = "awesome"
+
+def myfunc():
+    print("python is " + x4)
+
+myfunc()
+
+#if you create a variable with the same name inside a function, this variable wil be local,and
+#can be used inside the function, global variable with the same name will remain as it was
+#global and with the original value.
+
+x = "awesome"
+
+def myfunc():
+    x = "fantastic"
+    print("python is " + x)
+
+myfunc()
+
+def myfunc():
+    global x
+    x = "fantastic"
+
+myfunc()
+
+print("python is "+ x)
